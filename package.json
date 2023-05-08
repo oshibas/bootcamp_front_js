@@ -1,0 +1,35 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack -c webpack.development.js",
+    "build:test": "webpack -c webpack.test.js",
+    "watch": "npm run build -- -w",
+    "serve": "serve ./dist",
+    "serve:test": "serve ./tmp",
+    "lint:check": "eslint --ext .ts .",
+    "lint:fix": "eslint --ext .ts --fix .",
+    "format:check": "prettier --check 'src/**/*.ts'",
+    "format:fix": "prettier --write 'src/**/*.ts'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "css-loader": "^6.7.3",
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "prettier": "^2.8.8",
+    "serve": "^14.2.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
