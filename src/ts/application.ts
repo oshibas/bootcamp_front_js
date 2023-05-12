@@ -5,4 +5,4 @@ export class Application {
     document.querySelector('form')?.addEventListener('submit', () => {
       document.querySelector('.list-title')!.textContent = "makocchan";
     });
-  };
+    '}';
